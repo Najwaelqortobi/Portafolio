@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Martínez - Full Stack Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 3px;
+            background-color: var(--primary-color);
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .skill-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: scale(1.05);
+        }
+
+        .project-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .project-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(52, 152, 219, 0.8);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            color: white;
+            text-align: center;
+        }
+
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!--navbar es la class para crear un barra   -->
+        <!--navbar-expand-lg -----expand es para que se extiende y ---lg para que lo hace en pantallas grandes y se reduce en pequeñas-->
+        <!--navbar-dark es para definir un estillo oscuro en la nav y una escritura clara-->
+        <!--bg-dark es decir un background oscuro-->
+        <!--si quiero cambiar el color oscuro definido para la class bg-dark puedo crear otra clase 
+        y definir un estillo specifico en css-->
+        <div class="container">
+            <a class="navbar-brand" href="#">Najwa El Qortobi</a>
+            <!--navbar-brand:se utiliza para destacar el nombre de la marca-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <!--navbar-toggler: sirve para crear el botón que controla la expansión y contracción del 
+                menú de navegación en dispositivos móviles o pantallas pequeñas/ es decir es lo que hace que cuando apreto 
+                al menu hamburgesa se ven los li pero  hay tqmbien que usar javascript para que funciona es el script
+                abajo del bootstrap-->
+                <span class="navbar-toggler-icon"></span>
+                <!--span/navbar-toggler-icon: es el icono de 3 rayitas que se refiere al buton hamburgesa -->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!--collapse : oculta el contenido por defecto-->
+                <!--navbar-collapse :  va junto con la clase collapse lo que hace es que se muestran los li abajo del button hamburgesa no cerca-->
+                <ul class="navbar-nav ms-auto">
+                <!--ms-auto : poner los elementos que salen del hamburgesa al extremo opuesto de la derecha y le ponen margin auto -->
+                    <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre Mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
