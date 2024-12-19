@@ -14,38 +14,47 @@
 
     <section id="proyectos" class="py-5 bg-light">
         <div class="container d-column align-items-center">
+
                 <!-- Proyecto 1 -->
                 <div class="col card shadow-sm"> <!--creamos una columna que sea un card con una sombra-->
-                        <div class="card-body p-0 row g-0"><!--Este div se utiliza para estructurar el contenido dentro de la tarjeta+row : para crear en card una fila-->
+                        <div class="card-body  row  p-0 g-0"><!--Este div se utiliza para estructurar el contenido dentro de la tarjeta+row : para crear en card una fila-->
                         <div class="col-md-6"> <!--dentro de la fila me crees una columna que occupa la mitad de la fila -->
 
                               <!--Carousel inicio-->
                                     <div id="carouselProject" class="carousel slide" data-bs-ride="carousel"><!--carousel slide : para crear un carrusel
                                         +data-bs-ride="carousel": Activa la funcionalidad de deslizamiento automático.-->
                                         <div class="carousel-inner"><!--esta clase organizando y conteniendo las diapositivas-->
-                                            <div class="carousel-item active"><!--esta clase permite que este elemento se mostrara inicialmente-->
+                                            <div class="carousel-item active"><!--active permite que este elemento se mostrara inicialmente-->
                                                 <img src="../assets/Landing_Bootstrap.png" class="d-block w-100" alt="Landing_Bootstrap">
                                             </div>
-                                            <div class="carousel-item">
+                                            <div class="carousel-item"><!--la clase que se pone al contenido que aparece dentro del carussel-->
                                                 <img src="../assets/Landing_Bootstrap 3.png" class="d-block w-100" alt="Landing_Bootstrap">
                                             </div>
                                         </div>
 
 
 
-                                        <!--parte card carussel-->
+                                        <!--son los butones next y previous dentro del carussel inicio-->
                                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
+                                            <!--carousel-control-prev : identificamos que este button seria para poder hacer un preview y volver detras-->
+                                            <!--data-bs-target es lo que permite que los buttone previous sea dentro de un carussel especifico/ lo ligamos con id  con id /id="carouselProject es como ligar 
+                                            un input con un label"-->
+                                            <!--data-bs-slide="prev": Indica que este botón debe mover el carrusel a la diapositiva anterior cuando se hace clic en él.-->
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span><!--carousel-control-prev-icon: muestra el icono del preview
+                                            y con El atributo "aria-hidden="true"" en los íconos evita que los lectores de pantalla los lean, ya que son puramente decorativos-->
+                                            <span class="visually-hidden">Previous</span><!--El texto ("Previous" y "Next") no es visible para usuarios que pueden ver la pantalla.
+                                            Los lectores de pantalla pueden detectar y leer este texto, proporcionando información contextual a usuarios con discapacidades visuales-->
                                         </button>
                                         <button class="carousel-control-next" type="button" data-bs-target="#carouselProject" data-bs-slide="next">
                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                             <span class="visually-hidden">Next</span>
                                         </button>
                                     </div>
-                                       <!--parte card carussel fin-->
 
+                                        <!--fin de los butones next y previous dentro del carussel -->
+                                       <!--fin de la primera columna dentro del carussel-->
 
+                                            <!--inicio de la segunda columna dentro del carussel-->
 
                                 </div>
                                 <div class="col-md-6 d-flex flex-column"><!--dentro de la misma fila me crees otra columna que occupa la otra mitad de la fila -->
