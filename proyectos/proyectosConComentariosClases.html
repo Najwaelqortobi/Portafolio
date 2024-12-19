@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Proyectos</title>
+</head>
+
+<body>
+  
+    <div id="navbar-placeholder"></div>
+
+    <section id="proyectos" class="py-5 bg-light">
+        <div class="container d-column align-items-center">
+
+                <!-- Proyecto 1 -->
+                <div class="col card specificacion"> <!-- Creamos una columna que sea un card con una sombra -->
+                    <div class="row"> <!-- Este div se utiliza para estructurar el contenido dentro de la tarjeta + row: para crear una fila -->
+                        <div class="card-body p-0 d-flex"> <!-- Este div se utiliza para crear una card -->
+                        
+                            <!-- Dentro de esta fila me haces 2 col cada uno ocupa 6 que es la mitad -->
+                            <div class="col-md-"> <!-- Dentro de la fila me creas una columna que ocupa la mitad de la fila -->
+
+                                <!-- Carousel inicio -->
+                                <div id="carouselProject" class="carousel slide" data-bs-ride="carousel"> <!-- carousel slide: para crear un carrusel + data-bs-ride="carousel": Activa la funcionalidad de deslizamiento automático. -->
+                                    <div class="carousel-inner"> <!-- Esta clase organiza y contiene las diapositivas -->
+                                        <div class="carousel-item active"> <!-- active permite que este elemento se mostrara inicialmente -->
+                                            <img src="../assets/Landing_Bootstrap.png" alt="Landing_Bootstrap"> <!-- Asegúrate de que las imágenes ocupen todo el espacio disponible -->
+                                        </div>
+                                        <div class="carousel-item"> <!-- La clase que se pone al contenido que aparece dentro del carrusel -->
+                                            <img src="../assets/Landing_Bootstrap 3.png" alt="Landing_Bootstrap"> <!-- Asegúrate de que las imágenes ocupen todo el espacio disponible -->
+                                        </div>
+                                    </div>
+
+                                    <!-- Son los botones next y previous dentro del carrusel inicio -->
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span> <!-- Muestra el icono del preview -->
+                                        <span class="visually-hidden">Previous</span> <!-- Texto oculto para lectores de pantalla -->
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselProject" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span> 
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <!-- Fin de los botones next y previous dentro del carrusel -->
+
+                            </div>
+                            <div class="col-md-7 d-flex flex-column justify-content-center contenido-descripcion"> <!-- Dentro de la misma fila me creas otra columna que ocupa la otra mitad de la fila -->
+                                <div class="text-center">
+                                    <h5 class="card-title">Landing-Bootstrap</h5>
+                                    <p class="card-text">Breve descripción del proyecto 1. Explica en pocas palabras qué hace y qué tecnologías utilizaste.</p>
+                                </div>
+                                <div class="d-flex justify-content-center mt-3">
+                                    <a href="#" class="btn btn-primary me-2">Ver Proyecto</a>
+                                    <a href="#" class="btn btn-primary">Ver Código</a>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+
+        </div>
+        <!-- Carousel fin -->
+
+        <div id="footer-placeholder"></div>
+
+    </section>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../scriptNav.js"></script>
+<script src="../scriptFooter.js"></script>
+</html>
