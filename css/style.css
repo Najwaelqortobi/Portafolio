@@ -181,3 +181,12 @@ p{
     transform: translateY(-2px); /* Efecto de elevación al pasar el mouse */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra más intensa al pasar el mouse */
 }
+
+.fixed-height {
+    height: 600px; /* Ajusta este valor según tus necesidades */
+}
+
+.fixed-height img {
+    object-fit: cover;
+    height: 100%;
+}
