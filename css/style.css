@@ -71,6 +71,26 @@ p{
 }
 
 
+
+.card-title {
+    font-size: 1.5rem; 
+    font-weight: bold; 
+    color: #fff; 
+    background-color: #007FFF; 
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 1rem;
+    animation: pulse 1s infinite; 
+}
+
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
 /*Sobre Mi Fin*/
 
 /*Contacto inicio*/
@@ -146,7 +166,11 @@ p{
 .contenido-descripcion{
     border-radius: 0.3rem;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    h5, p{
+    p{
+        text-align: justify;
+        margin: 1.5rem;
+    }
+    h5{
         text-align: center;
     }
 
@@ -183,10 +207,11 @@ p{
 }
 
 .fixed-height {
-    height: 600px; /* Ajusta este valor según tus necesidades */
+    height: 600px; 
 }
 
 .fixed-height img {
     object-fit: cover;
     height: 100%;
+
 }
