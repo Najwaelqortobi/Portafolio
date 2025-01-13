@@ -1,0 +1,4 @@
+Este portafolio web muestra mis habilidades y proyectos como desarrolladora web full-stack, con un diseño moderno y minimalista en tonos azules y grises. 
+Ofrece una navegación intuitiva mediante un menú fijo superior, presentando secciones claramente definidas: Inicio, Sobre mí, Proyectos, Habilidades y Contacto. 
+Los proyectos se exhiben de manera visualmente atractiva con imágenes y descripciones, acompañados de una lista detallada de habilidades técnicas organizadas por categorías. Para facilitar la comunicación, se incluye un formulario de contacto funcional, proporcionando una presentación completa y profesional de mi experiencia y capacidades en desarrollo web. 
+El proyecto está desarrollado utilizando tecnologías web fundamentales como CSS3, HTML5 y JavaScript, demostrando dominio en el desarrollo frontend.
