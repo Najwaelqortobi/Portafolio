@@ -215,3 +215,25 @@ p{
     height: 100%;
 
 }
+
+.size-1 img{
+    overflow: hidden;
+    object-fit:contain;
+}
+
+.size-2 img{
+    overflow: hidden;
+    object-fit:contain;
+}
+
+.size img{
+    overflow: hidden;
+    object-fit:contain;
+}
+
+
+.size-4 img{
+    border-radius: 0.5rem;
+    overflow: hidden;
+    object-fit:contain;
+}
